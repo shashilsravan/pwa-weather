@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <script type="text/javascript">
+      // checking whether service workers are supported by our current browsers
+      // if serviceWorker in navigator is true, that means we do have access to service workers
+      if ('serviceWorker' in navigator){
+        // when window is loaded
+        window.addEventListener('load', () => {
+          // lets register our first service worker 
+          // first we have to create a serviceworker.js file in our public folder
+          // and then we pass its path in register method parameter
+          navigator.serviceWorker.register('./serviceworker.js')
+          .then(res => console.log('success', res))
+          .catch(err => console.log('error', err))
+          // since register gives us a promise, we use .then and .catch
+        })
+      }
+    </script>
+  </body>
+</html>

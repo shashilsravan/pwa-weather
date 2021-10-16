@@ -1,0 +1,126 @@
+html,
+body,
+#root {
+  font: 0.9rem sans-serif;
+  background: #ccc;
+  color: #1e2432;
+  height: 100%;
+  margin: 0;
+}
+
+.main-container {
+  /* background: url("https://i.natgeofe.com/n/1a0ee559-2747-462f-9038-a9c273fee709/1399_4x3.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container.overcast {
+  /* background: url("https://videohive.img.customer.envatousercontent.com/files/135987809/Image%20Preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=82bef0305e018a34f793bba8a2f0615c"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container.haze {
+  /* background: url("https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/FQPQPJX64AI6TA2BZQ644UXH3Y.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container.rain {
+  /* background: url("https://wpcdn.us-east-1.vip.tn-cloud.net/www.myneworleans.com/content/uploads/2021/04/r/y/gettyimages-1257951336.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container.clear {
+  /* background: url("https://sgp1.digitaloceanspaces.com/khabarhub/en/uploads/2020/03/sunny-weather.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container.cloudy {
+  /* background: url("https://media.istockphoto.com/photos/storm-sky-rain-picture-id512218646?k=20&m=512218646&s=612x612&w=0&h=C-2Gn8nsMG-o7QNiXYPqu4FeJJFABhPpe4rTG0CIMWQ="); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search {
+  outline: none;
+  padding: 16px 3%;
+  width: 300px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 5%;
+  background: white;
+}
+
+.city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 8%;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+p {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.city-temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1e2432;
+  text-align: center;
+}
+
+.city sup {
+  font-size: 0.5em;
+}
+
+.city-name {
+  font-size: 2em;
+}
+
+.city-name sup {
+  padding: 0.2em 0.6em;
+  margin-left: 0.2em;
+  border-radius: 30px;
+  color: #fff;
+  background: blueviolet;
+}
+
+.city-icon {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .search {
+    padding: 20px 15%;
+  }
+
+  .city {
+    padding: 40px 20%;
+  }
+}
